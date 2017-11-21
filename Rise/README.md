@@ -49,10 +49,6 @@ https://cmc-kumar.github.io/elastic/Rise/Account%20Summary.html
 
 https://cmc-kumar.github.io/elastic/Rise/README.md
 
-
-https://cmc-kumar.github.io/elastic/Rise/theme
-
-
 https://cmc-kumar.github.io/elastic/Rise/Delete%20Scheduled%20Appointment.html
 
 
