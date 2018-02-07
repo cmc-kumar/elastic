@@ -1,0 +1,496 @@
+.text-transform{
+    text-transform: Uppercase;
+}
+
+.bg_grey, a.bg_grey, a.bg_grey:visited, a.bg_grey:hover, a.bg_grey:active{
+    background-color: #e1e1e1;
+    color: #fff;
+}
+
+.page-header-stuffix{
+    font-size:18px; 
+    margin-left:20px;
+    color: #6B6659;
+}
+
+@media screen and (max-width: 850px){
+    .page-header-stuffix{
+        font-size:14px; margin-left:2px;
+    }
+}
+.multicolumn_row .multicolumn_column{
+    word-wrap: break-word;
+    word-break:break-word;
+}
+.break-all{
+    word-break: break-all;
+}
+.welcome_info{
+    display: inline-block;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mobile-select-small{
+    font-size: 12px;
+    padding:5px 0;
+}
+@media only screen and (max-width: 850px){
+    .welcome_info {
+        display: inline-block;
+        width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+@media only screen and (max-width: 600px){
+    .welcome_info {
+        display: inline-block;
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+@media only screen and (max-width: 400px){
+    .welcome_info {
+        display: inline-block;
+        width: 130px;
+        white-space: nowrap;
+        overflow: hidden;
+        margin: 0 0 0 20px;
+        text-overflow: ellipsis;
+    }
+}
+
+
+
+/*Start New Style*/
+
+/* change any .bg_light_blue to Light Gray: #F5F5F5*/
+.bg_light_blue 
+{
+    background-color: #F5F5F5;
+}
+
+label, label + input + label ,p, .p{
+	
+	font-size:16px;
+}
+
+select{
+	
+	border:1px solid #CCCBCB;
+	border-radius:4px;
+}
+.pad_l_10{
+	
+	padding-right: 10px;
+	padding-left:10px;
+}
+
+.bg_f5{
+	
+	
+	background-color:#F5F5F5;
+}
+
+.bg_failure .h4, .bg_failure span {
+	
+	color:#D0021B;
+}
+
+.multicolumn_row_separator {
+	
+	border-top: 1px solid #BBBBBB;
+}
+
+.bg_BBB{
+	background-color:#BBBBBB;
+	
+}
+	
+.bg_blue{
+	background-color:#4DB4E7 ;
+}
+
+.bg_f5{
+	
+	background-color:#f5f5f5;
+}
+
+p select{
+	
+	margin-top:0;
+}
+
+
+/******* edit all buttons*/
+/******* overwrite buttons*/
+
+
+input[type=submit],
+input[type="button"],
+.back{
+	
+	
+	text-transform: uppercase;
+	height:44px;
+	padding-left:20px;
+	padding-right:20px;
+	border:none;
+	color:#FFF;
+	cursor: pointer;
+	font-family:"DIN Regular";
+	font-size: 1.26em;
+    margin-top: .7em;
+    padding: .5em 18px .5em 18px;
+	
+	
+}
+.back{
+	margin-top:40px;
+	
+}
+
+input[value="Print"]{
+	background-color:transparent;
+	color:blue;
+	border:none;
+    text-transform: uppercase;
+	cursor: pointer;
+    text-decoration: underline;
+    height: 44px;
+    margin-left: 20px;
+    margin-right: 20px;
+	font-size: 1.26em;
+    margin-top: .7em;
+	
+	
+}
+
+input[value="Decline All"],
+input[value="Cancel"],
+input[value="Decline"]{
+	
+	background-color: #BBBBBB;
+	
+}
+
+
+
+.ordin_button{
+	text-transform: uppercase;
+	height:44px;
+	padding-left:20px;
+	padding-right:20px;
+	border:none;
+	color:#FFF;
+	cursor: pointer;
+	font-family:"DIN Regular" 
+	
+}
+
+.field_border{
+	border:1px solid #CCCBCB;
+	border-radius:4px;
+	
+	
+}
+
+input[type*="text"]{
+	
+	color:#6B6659;
+	border:1px solid #CCCBCB;
+	border-radius:4px;
+	line-height: 36px;
+	
+
+	
+}
+
+/* Page 1*/
+.text_step_italic{
+	
+	font-weight: bold;
+	font-size:17px;
+	
+}
+
+.text_step_italic.step1{
+	
+	margin-top:20px !important ;
+	
+}
+.text_step_italic.step2{
+	margin-top:20px !important;
+	margin-bottom:20px !important;
+}
+.text_step_italic.step3{
+	margin-top:0 !important;
+}
+
+
+/* Page 4 */
+.font_size_17{
+	
+	font-size:17px;
+}
+
+/*****************************************************/
+
+
+.text_in_make_a_payment{
+	
+	float:left;
+}
+
+
+.number_in_make_a_payment{
+float:right;
+}
+
+.label_width{
+	width:93%;
+}
+
+.text_number_container{
+	
+}
+.p_text_number_width{
+	width:529px;
+}
+
+.put_box{
+	
+	background-color: #f5f5f5;
+    padding: 0.5em;
+    margin-bottom: 12px;
+
+}
+.no_more_tables tr {
+	
+	border-bottom: 1px solid #BBBBBB;
+}
+
+/* Page 5 */
+
+.multicolumn_row_separator2{
+	
+	height:20px;
+	border-bottom:1px solid #BBB;
+	
+		
+}
+
+/* Page 6  */
+
+
+.prnt_button{
+	
+	background-color:transparent;
+	color:blue;
+	border:none;
+    text-transform: uppercase;
+	cursor: pointer;
+    text-decoration: underline;
+    height: 44px;
+    margin-left: 20px;
+    margin-right: 20px;
+	font-size: 1.26em;
+    margin-top: .7em;
+}
+
+
+/* page 11 */
+
+
+
+#main a[href].see_button {
+	
+/*	height:44px;*/
+/*	padding-left:20px;*/
+/*	padding-right:20px;*/
+	border:none;
+	color:#FFF;
+	cursor: pointer;
+	font-family:"DIN Regular";
+	font-size: 1.26em;
+	display:inline-block;
+	width:auto;
+	height:auto;
+	padding: 9px 18px 9px 18px;
+	
+	
+	
+   
+	
+	
+}
+
+#main a[href].bg_blue {
+	background-color:#4DB4E7 ;
+	
+	
+}
+
+.no_more_tables .table-striped .table-standard .cf{
+	
+	    box-sizing: border-box;
+
+}
+
+/* page 15 */
+
+
+
+/*Page 16 */ 
+
+.thank_you_heading_important {
+	
+	margin-left:0 ;
+	margin-bottom:0;
+	margin-top:13px !important;
+}
+
+.page_title_margin ,.Promise_To_Pay_margin{
+	margin-bottom:0;
+	
+}
+
+/*page 18*/
+
+.modal_container a [class^="fa-"]{
+	
+	color:#BBB;
+	display: inline-block;
+    margin-top: 0.5em;
+	
+}
+
+
+/*End New Style*/
+
+/*Start New Mobile Style*/
+
+/*overwrite bg color from bg_off_white to f5*/
+#mobile_nav_flyout_right_container{
+	  background-color:#f5f5f5;
+	
+	
+}
+
+
+
+
+
+@media screen and (max-width: 850px){
+	
+	.select_width_49_percent{
+		width:49%;
+	}
+	
+	.no_padding_left_30{
+		padding-left:0 !important;
+	}
+	
+	input[type=submit], input[type="button"], .back{
+		
+		display: block;
+		width: 100%;
+	}
+   
+	.p_text_number_width {
+		
+		width:48%;
+	}
+	.label_width{
+	width:90%;
+	
+}
+	/* td that contains text area (inside table)like Survey and Treatments page */
+	#surveyFormWithoutButton .no_more_tables.table-standard #td_of_text_area {
+		padding-left: 0px;
+		width:100% !important;
+		margin-left: auto;
+		margin-right: auto;
+		width: 93%;
+		min-height: 50px;
+		
+		
+	}
+
+	
+	#surveyFormWithoutButton .no_more_tables.table-standard #td_of_text_area textarea{
+		margin-top:35px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 93%;
+		min-height: 50px;
+		
+
+		
+	}
+		
+input[type*="text"]{
+width:90%;
+}
+	
+	
+}
+
+@media only screen and (max-width: 640px){
+	
+	.p_text_number_width {
+		
+		width:100%;
+	}
+	.label_width{
+	width:93%;
+	
+}
+	/* td that contains text area (inside table)like Survey and Treatments page */
+	#surveyFormWithoutButton .no_more_tables.table-standard #td_of_text_area{
+		padding-left: 0px;
+		width:100% !important;
+		
+		
+	}
+
+	
+	#surveyFormWithoutButton .no_more_tables.table-standard #td_of_text_area textarea{
+		
+		margin-top:35px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 93%;
+		min-height: 50px;
+		
+	}
+	
+	
+	input[type*="text"]{
+	width:90%;
+	}
+	
+
+
+}
+	
+
+
+
+
+
+
+/*End  New Mobile Style*/
+
+
+
+
+
+
+
+
