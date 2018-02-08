@@ -214,7 +214,9 @@
                         <div id="main_right_unit">
                             <div id="main_content_right_rail_unit">
                                 <div id="main_content" class="no_right_rail">
-                                    <div id="main_content_container">
+									
+									<!--*** add class center to text align center -->
+                                    <div id="main_content_container" class="center">
                                         <div id="title_main_content" class="page_title login_title">
                                             <h1>Login</h1>
                                             <!-- End title_main_content -->
@@ -230,7 +232,8 @@ Take advantage of this opportunity to review your account(s) and the payment opt
 
 
                                         <div class="article article_standard login_table_box">
-                                            <table class="no_more_tables table-striped table-standard cf login_table">
+											<!-- *** add class special_table -->
+                                            <table class="no_more_tables table-striped table-standard cf login_table special_table">
                                                 <tr class="bg_very_light_grey">
                                                     <td class="width_35">
                                                         <p class="large">
@@ -242,8 +245,8 @@ First Name                                                        </p>
                                                         <div class="clear"></div>
                                                     </td>
                                                     <td class="width_65">
-                                                        <p>
-                                                            <input class=""
+                                                        <p class="p_above_input_login">
+                                                            <input class="font_1em"
                                                                    type="text"
                                                                    placeholder="First Name"
                                                                    name="firstName"
@@ -278,8 +281,8 @@ Last Name                                                        </p>
                                                         <div class="clear"></div>
                                                     </td>
                                                     <td class="width_65">
-                                                        <p>
-                                                            <input class=""
+                                                        <p class="p_above_input_login">
+                                                            <input class="font_1em"
                                                                    type="text"
                                                                    placeholder="Last Name"
                                                                    name="lastName"
@@ -315,8 +318,8 @@ Last 4 digits of Account Number                                                 
                                                         <div class="clear"></div>
                                                     </td>
                                                     <td class="width_65">
-                                                        <p>
-                                                            <input class=""
+                                                        <p class="p_above_input_login">
+                                                            <input class="font_1em"
                                                                    type="text"
                                                                    placeholder="Last 4 digits of Account Number"
                                                                    name="last4ActNum"
@@ -642,6 +645,7 @@ $(document).ready(function () {
 });
 
 /* End Footer Bottom Fix */
+	
     var sessionCutDownTimes = 120;
 
     var timeOutId = null;

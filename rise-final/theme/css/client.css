@@ -133,7 +133,7 @@ p select{
 
 input[type=submit],
 input[type="button"],
-.back{
+.back {
 	
 	
 	text-transform: uppercase;
@@ -150,6 +150,10 @@ input[type="button"],
 	
 	
 }
+
+
+
+
 .back{
 	margin-top:40px;
 	
@@ -308,28 +312,6 @@ float:right;
 
 
 
-#main a[href].see_button {
-	
-/*	height:44px;*/
-/*	padding-left:20px;*/
-/*	padding-right:20px;*/
-	border:none;
-	color:#FFF;
-	cursor: pointer;
-	font-family:"DIN Regular";
-	font-size: 1.26em;
-	display:inline-block;
-	width:auto;
-	height:auto;
-	padding: 9px 18px 9px 18px;
-	
-	
-	
-   
-	
-	
-}
-
 #main a[href].bg_blue {
 	background-color:#4DB4E7 ;
 	
@@ -373,8 +355,9 @@ float:right;
 
 /*End New Style*/
 
-/*Start New Mobile Style*/
 
+
+/*for mobile*/
 /*overwrite bg color from bg_off_white to f5*/
 #mobile_nav_flyout_right_container{
 	  background-color:#f5f5f5;
@@ -384,8 +367,8 @@ float:right;
 
 
 
-
-
+/*Start New Mobile Style for 850 */
+/* start media 850*/
 @media screen and (max-width: 850px){
 	
 	.select_width_49_percent{
@@ -400,8 +383,17 @@ float:right;
 		
 		display: block;
 		width: 100%;
+		
 	}
-   
+	.p_button_see{
+		float:none !important;	
+	}
+	.p_above_button_see{
+		float:none !important;	
+		padding-top:0!important;
+		
+	}
+	
 	.p_text_number_width {
 		
 		width:48%;
@@ -409,7 +401,8 @@ float:right;
 	.label_width{
 	width:90%;
 	
-}
+	}
+	
 	/* td that contains text area (inside table)like Survey and Treatments page */
 	#surveyFormWithoutButton .no_more_tables.table-standard #td_of_text_area {
 		padding-left: 0px;
@@ -434,12 +427,46 @@ float:right;
 		
 	}
 		
-input[type*="text"]{
-width:90%;
+	input[type*="text"]{
+		width:90%;
+	}
+
 }
+/* End media 850*/
+/*End New Mobile Style for 850 */
+
+
+	/****** start one public all media code not only mobile*****/
+	.p_above_button_see{
+		line-height: 30px;
+		padding-top: 20px;
+	}
+
+
+	
+	input[value="See Your Payment Schedule"]{
+	
+		margin-top:10px !important;
+		margin-bottom:10px !important;
+		
+		}
+
+
+
+
+	input[type*="text"]{
+		width:90%;
+	}
+
+
+
+	/****** End one public all media code not only mobile*****/
+   
 	
 	
-}
+	
+
+/* start media 640*/
 
 @media only screen and (max-width: 640px){
 	
@@ -475,17 +502,35 @@ width:90%;
 	width:90%;
 	}
 	
-
-
-}
+	.p_above_input_login{
+		
+		margin-top:0 !important;
+	}
 	
 
 
-
-
+}
+/* start media 640*/
+	
 
 
 /*End  New Mobile Style*/
+
+
+.special_table {
+	max-width:700px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:30px!important;
+	margin-bottom:30px;
+
+	
+}
+
+.font_1em{
+	font-size: 1em !important;
+
+	}
 
 
 
