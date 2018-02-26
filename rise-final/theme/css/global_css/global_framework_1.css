@@ -403,7 +403,7 @@ background:#fff;
 }
 
 #header{
-	
+    height: 80px;
 	background-color:#B9DB0C;
 }
 
@@ -433,10 +433,10 @@ background:#fff;
 
 @media only screen and (min-width:850px){
 	
-#header_container{
+/*#header_container{
 	height:80px;
 
-}
+}*/
 }
 
 

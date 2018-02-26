@@ -1166,7 +1166,7 @@ alert_topHiddenModal = false;
 
 function centerModal(modal) {
     if (currentModal != "") {
-        var $content_offset = $($("#content_container")[0]).offset().left;
+        var $content_offset = $($("#page_center_container")[0]).offset().left;
         var $outer = $(modal);
         var inner = $("#" + modal.id + " .modal_container")[0];
 
@@ -1219,7 +1219,8 @@ window.orientationchange = function () {
 
 function footerFix() {
     $("#footer").css("margin-top", "0px");
-    $("#footer").css("margin-top", $(document).height() - $('#content_container').height() - $('#footer').height() + "px");
+    $("#footer").css("margin-top", $(document).height() - $('#content').height()- $('#main_container').height() - $('#footer').height() + "px");
+    console.log($(document).height()+"|"+$('#content').height()+"|"+$('#main_container').height()+"|"+$('#footer').height());
 }
 
 

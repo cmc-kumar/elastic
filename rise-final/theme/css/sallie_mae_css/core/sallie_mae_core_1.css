@@ -465,7 +465,7 @@ background-color: #00aaf0;
 .bg_light_grey, a.bg_light_grey, a.bg_light_grey:visited, a.bg_light_grey:hover, a.bg_light_grey:active
 {
     background-color: rgba(84, 187, 255, 0.76);
-    color: #003b55!important;
+
 }
 
 a[href]:hover.bg_light_grey 
