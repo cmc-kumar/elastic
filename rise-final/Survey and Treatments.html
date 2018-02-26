@@ -42,7 +42,7 @@
     
         var storedHash = window.location.hash;
         window.setInterval(function () {
-        if (window.location.hash != storedHash) {
+        if (window.location.hash != storedHash && window.location.hash != "#") {
         window.location.hash = storedHash;
         }
         }, 50);
@@ -161,10 +161,10 @@
     }
   </style>
 </head>
-<body class="responsive">
+<body class="responsive" style="visibility: visible;" onload="changeHashOnLoad()">
 
             <div id="mobile_nav_flyout_left" class="small medium inactive">
-              <div id="mobile_nav_flyout_left_container">
+               <div id="mobile_nav_flyout_left_container">
                   <!--Empty left menu now -->
 
               </div>
@@ -172,113 +172,127 @@
 
              <div id="mobile_nav_flyout_right" class="small medium inactive">
                 <div id="mobile_nav_flyout_right_container">
-					<!-- ************* content removed from left to right -->
-					<div class="">
+
+                  <div class="">
                         <h3 class="indent_1 accordion accordion_small accordion_medium accordion_large inactive">
-                              <a title="Account Summary" class="block horizontal active" href="/html/acctSummary">
+                              <a title="Account Summary" class="block horizontal active" href="/r_key_QDIHPYt3f8bhpaZhWX25Dw==/html/acctSummary">
                                   <span class="">Account Summary</span>
                               </a>
                         </h3>
 
                         <h3 class="indent_1 accordion accordion_small accordion_medium accordion_large inactive">
                             <a title="Payment Options" class="block horizontal inactive" href="javascript:void(0);" onclick="more(this)">
-								<!-- *** removed the + and - icon span-->
-                                
+                                <!--<span class="plus_minus"><span class="fa-plus"></span></span>-->
                                 <span class="">Payment Options</span>
                             </a>
                         </h3>
                         <div class="accordion_content">
-                            <a title="Make A Payment" class="vertical bg_white button_menu_item " href="/exec/payment">
+                            <a title="Make A Payment" class="vertical bg_white button_menu_item " href="/r_key_QDIHPYt3f8bhpaZhWX25Dw==/exec/payment">
                                 <span class="indent_1 alignment_wide">Make A Payment</span><span class="fa-chevron-right"></span>
                             </a>
-                            <a title="Review Payment Offers" class="vertical bg_white button_menu_item " href="/exec/program">
+                            <a title="Review Payment Offers" class="vertical bg_white button_menu_item " href="/r_key_QDIHPYt3f8bhpaZhWX25Dw==/exec/program">
                                 <span class="indent_1 alignment_wide">Review Payment Offers</span><span class="fa-chevron-right"></span>
                             </a>
-                            <a title="Manage Payment Methods" class="vertical bg_white button_menu_item " href="/payments/manageBankAccounts">
+                            <a title="Manage Payment Methods" class="vertical bg_white button_menu_item " href="/r_key_QDIHPYt3f8bhpaZhWX25Dw==/payments/manageBankAccounts">
                                 <span class="indent_1 alignment_wide">Manage Payment Methods</span><span class="fa-chevron-right"></span>
                             </a>
-                              <a title="Promise To Pay" class="vertical bg_white button_menu_item " href="/exec/promise">
+                              <a title="Promise To Pay" class="vertical bg_white button_menu_item " href="/r_key_QDIHPYt3f8bhpaZhWX25Dw==/exec/promise">
                                   <span class="indent_1 alignment_wide">Promise To Pay</span><span class="fa-chevron-right"></span>
                               </a>
                         </div>
 
                         <h3 class="indent_1 accordion accordion_small accordion_medium accordion_large active">
-                            <a title="Update Contact Info" class="block horizontal active" href="/flow/contactFlow">
+                            <a title="Update Contact Info" class="block horizontal active" href="/r_key_QDIHPYt3f8bhpaZhWX25Dw==/flow/contactFlow">
                                 <span class="">Update Contact Info</span>
                             </a>
                         </h3>
 
+                            <h3 class="indent_1 accordion accordion_small accordion_medium accordion_large inactive">
+                              <a title="Services Complaint WF" class="block horizontal inactive" href="javascript:void(0);" onclick="more(this)">
+                                  <span class="plus_minus"><span class="fa-plus"></span></span>
+                                  <span class="">Services Complaint WF</span>
+                              </a>
+                            </h3>
+                             <div class="accordion_content">
+                                    <a title="Complaint WF" class="vertical bg_white button_menu_item " href="/r_key_QDIHPYt3f8bhpaZhWX25Dw==/flow/workflow/start?ozEsYt=jgywGwqZLX2k37a65PNMeaBPCBiI6qcJwm0jsa8ZKCK8O1fOAAV1O7x7i6gmhlT54OfJgUnh8UZELHHtKskYN4ltXSlzh2GBRej9rAJ6VjM=">
+                                      <span class="indent_1 alignment_wide">Complaint WF</span><span class="fa-chevron-right"></span>
+                                    </a>
+                             </div>
+
                         <h3 class="indent_1 accordion accordion_small accordion_medium accordion_large active">
-                            <a title="Schedule Appointment" class="block horizontal active" href="/appointment/list">
+                            <a title="Schedule Appointment" class="block horizontal active" href="/r_key_QDIHPYt3f8bhpaZhWX25Dw==/appointment/list">
                                 <span class="">Schedule Appointment</span>
                             </a>
                         </h3>
 
-                         
                     <h3 class="indent_1 accordion accordion_small accordion_medium accordion_large active">
                           <a title="Logout" class="block horizontal active" href="/security/logout">
-                              <span class="text-transform">Logout</span>
+                              <span class="">Logout</span>
                           </a>
                     </h3>
                   </div>
-					<!-- ******* end of content right menu content -->
-					
-                </div>
+
+              </div>
+             </div>
+
               </div>
             
 
 <div id="page_center">
   <div id="page_center_container">
     <div id='content'>
-      
+
         <div id='header'>
           <div id='header_container'>
           
             <div id="mobile_nav" class="small medium">
               <ul>
                 <li class="icon">
-					<!-- href of a changed from mobile_nav_flyout_left to mobile_nav_flyout_right-->
                     <a class="menu_activator" href="javascript:mobile_menu('mobile_nav_flyout_right')"><span
                       class="fa-bars"></span></a>
                 </li>
                 <li>
-						Welcome <br/>
+Welcome<br/>
                     <span class="weight_bold welcome_info">
-                        Jeffrey Collins
+                        Stacie Whyberd
                     </span>
                 </li>
                 <li class="icon">
-					
-                  <a title="CMC" href="/html/acctSummary">
-                    <img class="logo" alt="CMC" src="./theme/images/logo/logo.png">
+                  <a title="CMC" href="/r_key_QDIHPYt3f8bhpaZhWX25Dw==/html/acctSummary">
+                    <img class="logo" alt="RISE" src="./theme/images/logo/logo.png">
                   </a>
-					
                 </li>
               </ul>
             </div>
-			  <div class="user_logout_container">
+            <div class="user_logout_container">
             <div id="user_logout" class="large">
-                <div id="user_logout_container">
-                  <p class="weight_bold p_1">Welcome, Jeffrey Collins&nbsp;&nbsp;
-                    <a href="/security/logout">Logout</a>
-                  </p>
+
+                  <div id="user_logout_container">
+                    <p class="weight_bold p_1">Welcome,
+
+                            Stacie Whyberd
+                            &nbsp;<a class="a_1" href="/security/logout?param=https://www.yahoo.com/ ">Return To MyAccount</a>
+                      &nbsp;
+                      <a class="a_2" href="/security/logout">Logout</a>
+                    </p>
+                  </div>
                 </div>
+                 </div>
             </div>
-				  </div>
-			  
             <div class="clear"></div>
           
           
             <div id="top_nav" class="large">
+
               <div id="top_nav_container">
                 <div class="multicolumn_row multicolumn_row_borderless">
                   <div class="multicolumn_column top_logo_width">
-                    <div class="multicolumn_column_container div_1">
-						<div class="logo_container_1">
-							  <a title="CMC" href="/html/acctSummary" class="logo_a_1">
-								<img alt="CMC" src="./theme/images/logo/logo.png" class="logo_img_1">
-							  </a>
-							</div>
+                   <div class="multicolumn_column_container div_1">
+                    <div class="logo_container_1">
+                      <a title="CMC" href="/r_key_QDIHPYt3f8bhpaZhWX25Dw==/html/acctSummary" class="logo_a_1">
+                        <img alt="RISE" src="./theme/images/logo/logo.png" class="logo_img_1">
+                      </a>
+                    </div>
                       <div class="column_fill">
                       </div>
                       <!-- End multicolumn_column_container -->
@@ -289,32 +303,34 @@
                       <div class="multicolumn_column_container">
                         <ul id="top_nav_menu" class="hotspot_menu">
                             <li id="top_nav_menu_0">
-                              <a title="Account Summary" href="/html/acctSummary" class="">Account Summary</a>
+                              <a title="Account Summary" href="/r_key_QDIHPYt3f8bhpaZhWX25Dw==/html/acctSummary" class="">Account Summary</a>
                             </li>
                             <li id="top_nav_menu_1" class="menu_button url_off not_full">
-                              <a title="Payment Options" class="menu_button_a" href="javascript:void(0);">Payment Options</a>
+                              <a title="Payment Options" class="menu_button_a " href="javascript:void(0);">Payment Options</a>
                               <div id="top_nav_targets_1" class="top_nav_target flyout">
                                 <div class="article article_standard">
-                                  <p><a title="Make A Payment" href="/exec/payment">Make A Payment</a></p>
-                                  <p><a title="Review Payment Offers" href="/exec/program">Review Payment Offers</a></p>
-                                  <p><a title="Manage Payment Methods" href="/payments/manageBankAccounts">Manage Payment Methods</a></p>
-                                    <p><a title="Promise To Pay" href="/exec/promise">Promise To Pay</a></p>
+                                  <p><a title="Make A Payment" href="/r_key_QDIHPYt3f8bhpaZhWX25Dw==/exec/payment">Make A Payment</a></p>
+                                  <p><a title="Review Payment Offers" href="/r_key_QDIHPYt3f8bhpaZhWX25Dw==/exec/program">Review Payment Offers</a></p>
+                                  <p><a title="Manage Payment Methods" href="/r_key_QDIHPYt3f8bhpaZhWX25Dw==/payments/manageBankAccounts">Manage Payment Methods</a></p>
+                                    <p><a title="Promise To Pay" href="/r_key_QDIHPYt3f8bhpaZhWX25Dw==/exec/promise">Promise To Pay</a></p>
                                 </div>
                               </div>
                             </li>
                             <li id="top_nav_menu_2">
-                              <a title="Update Contact Info" href="/flow/contactFlow" class="">Update Contact Info</a>
+                              <a title="Update Contact Info" href="/r_key_QDIHPYt3f8bhpaZhWX25Dw==/flow/contactFlow" class="">Update Contact Info</a>
                             </li>
+
+                                  <li id="top_nav_menu_6" class="menu_button url_off not_full">
+                                    <a title="Services Complaint WF" class="menu_button_a " href="javascript:void(0);">Services Complaint WF</a>
+                                    <div id="top_nav_targets_6" class="top_nav_target flyout">
+                                      <div class="article article_standard">
+                                            <p><a title="Complaint WF" href="/r_key_QDIHPYt3f8bhpaZhWX25Dw==/flow/workflow/start?ozEsYt=jgywGwqZLX2k37a65PNMeaBPCBiI6qcJwm0jsa8ZKCK8O1fOAAV1O7x7i6gmhlT54OfJgUnh8UZELHHtKskYN4ltXSlzh2GBRej9rAJ6VjM=">Complaint WF</a></p>
+                                      </div>
+                                    </div>
+                                  </li>
                             <li id="top_nav_menu_3">
-                              <a title="Schedule Appointment" href="/appointment/list" class="">Schedule Appointment</a>
+                              <a title="Schedule Appointment" href="/r_key_QDIHPYt3f8bhpaZhWX25Dw==/appointment/list" class="">Schedule Appointment</a>
                             </li>
-							<!--
-							this was for testing only
-                              <li id="top_nav_menu_4">
-                                <a target="_blank" href="/flow/workflow/start?ozEsYt=jgywGwqZLX2k37a65PNMeaBPCBiI6qcJwm0jsa8ZKCK8O1fOAAV1O7x7i6gmhlT54OfJgUnh8UZELHHtKskYNy3O0PQuViWGKZoAwdBbvlc=">Test Workflow</a>
-                              </li>
-							
-									-->
                         </ul>
                         <div class="column_fill">
                         </div>
@@ -334,16 +350,18 @@
           <div class='clear'>
           </div>
           <!-- End header -->
-			
-			
         </div>
-		<div id='content_container'>
         <div id='main'>
           <div id='main_container'>
             <div id="main_right_unit">
               <div id="main_content_right_rail_unit">
                 <div id="main_content" class="no_right_rail">
                   <div id="main_content_container">
+                    <div id="title_main_content" class="page_title">
+                      <h1 class="text-transform">
+<b style=""><font size="2">​<span style="color: rgba(0, 0, 0, 0); font-family: sans-serif; text-align: center; white-space: pre;">Advisory Services Complaint Sample</span></font></b>                      </h1>
+                      <!-- End title_main_content -->
+                    </div>
                     <div class="process-box">
                       <ul>
 
@@ -352,18 +370,18 @@
 
 
 
-                    <form action="/nonAuthenticated/flow/resWorkflow"
+                    <form action="/r_key_QDIHPYt3f8bhpaZhWX25Dw==/flow/resWorkflow"
                           method="post"
                           name="surveyAndTreatmentForm"
                           id="surveyAndTreatmentForm"
                           enctype="multipart/form-data">
-                      <input type="hidden" name="_flowExecutionKey" value="e10s1">
+                      <input type="hidden" name="_flowExecutionKey" value="e1s1">
                       <input type="hidden" name="skipTask" id="skipTask" value="false">
 
                       <div class="article article_standard" id="surveyFormWithoutButton">
                           <div class="page_title">
                             <h4>
-                            
+                            Please register your complaints/feedback here.
                             </h4>
                           </div>
                         <table class="no_more_tables table-striped table-standard cf">
@@ -379,7 +397,7 @@
 
 
                                   <thead style="">
-                                  <tr class="bg_light_blue">
+                                  <tr class="bg_light_grey">
                                         <th class="width_5">
                                           <p class="weight_normal">#</p>
 
@@ -410,8 +428,8 @@
                                           </td>
 
                                           <td  data-title="Question" class="showHeader"   style="width: 63.333%">
-                                            <p class="no_top_margin">
-                                            Primary Responsible Name: ​
+                                            <p class="">
+                                            <font size="2"><b>​<span style="font-family: sans-serif; text-align: center; white-space: pre;">What type of complaint Is being lodged?</span></b></font>
                                               
 
                                             </p>
@@ -420,15 +438,18 @@
                                           </td>
                                         <td  data-title="Answer" class="showHeader"  style="width: 31.667%">
 
-										  <p class="inline">
-											<input
-												type="hidden"
-												name="answers[259]"
-												value=""
-												itemTag="WF_FORM_ITEM" 
-												>
+  <select name="answers[10]" class="offset-b10 no_top_margin" 
+          itemTag="WF_FORM_ITEM"
+          class="inline"
+            >
+      <option value="Feedback"
+>Feedback</option>
+      <option value="Complaint"
+>Customer Service Complaint</option>
+      <option value="Application Related"
+>Application Related</option>
+  </select>
 
-										  </p>
 
 
                                           <div class="clear"></div>
@@ -447,26 +468,29 @@
                                           </td>
 
                                           <td  data-title="Question" class="showHeader"   style="width: 63.333%">
-                                            <p class="no_top_margin">
-                                            Guarantor Responsible Name: ​
+                                            <p class="">
+                                            Please describe the problem
                                               
 
+                                                <span class="fa-asterisk text_red bg_callout_padding"></span>
                                             </p>
 
                                             <div class="clear"></div>
                                           </td>
                                         <td  data-title="Answer" class="showHeader"  style="width: 31.667%">
 
-  <p class="inline">
-    <input
-        type="hidden"
-        name="answers[261]"
-        value=""
-        itemTag="WF_FORM_ITEM" 
-        >
-  
-  </p>
+  <textarea
+      name="answers[16]"
+      rows='1'
+      class="p"
+      value=""
+      autocomplete="off" 
+      itemTag="WF_FORM_ITEM"
+      class="inline"
+      ></textarea>
 
+
+  <span id="answer_validation[16]" class="red"></span>
 
                                           <div class="clear"></div>
                                       </td>
@@ -484,8 +508,8 @@
                                           </td>
 
                                           <td  data-title="Question" class="showHeader"   style="width: 63.333%">
-                                            <p class="no_top_margin">
-                                            Enter a long crazy comment.&nbsp;
+                                            <p class="">
+                                            Please rate your overall experience, 1 being low and 10 being high
                                               
 
                                                 <span class="fa-asterisk text_red bg_callout_padding"></span>
@@ -493,20 +517,18 @@
 
                                             <div class="clear"></div>
                                           </td>
-											<!--* add id for td that contain text area and for text area for spacial style -->
-                                        <td  data-title="Answer" class="showHeader" id="td_of_text_area" style="width: 31.667%">
+                                        <td  data-title="Answer" class="showHeader"  style="width: 31.667%">
 
-											  <textarea
-												  name="answers[81]"
-												  rows='1'
-												  class="p"
-												  value=""
-												  autocomplete="off" 
-												  itemTag="WF_FORM_ITEM"
-												  class="inline" ></textarea>
+    <input
+        name="answers[14]"
+        type="text"
+        value=""
+        autocomplete="off" 
+        itemTag="WF_FORM_ITEM"
+        class="inline"
+        />
 
-
-											  <span id="answer_validation[81]" class="red"></span>
+  <span id="answer_validation[14]" class="red"></span>
 
                                           <div class="clear"></div>
                                       </td>
@@ -522,7 +544,7 @@
                         </table>
                           <div class="page_title">
                             <h4>
-                            
+                            Thank you for providing the feedback and we will get back to you in 24 hours.
                             </h4>
                           </div>
                       </div>
@@ -537,14 +559,14 @@
 
 
 
-						  	<!--*** style="width: auto;" is removed from input -->
-                        <input type="submit" class="vertical button_standard input_submit inline offset-r10 bg_blue ordin_button"
-                                name="_eventId_confirm"
+
+                        <input type="submit" class="vertical button_standard bg_blue input_submit inline offset-r10 btn btn-primary"
+                               style="width: auto;" name="_eventId_confirm"
                                value="Submit" onclick="return validateWFForm();"/>
                     </span>
-                      <span class="btn_wfl" style="">
+                      <span class="btn_wfl" style="float:right;">
                                                          <input id="noPrint"
-                                                                class="vertical input_submit inline offset-r10 prnt_button"
+                                                                class="vertical button_standard bg_blue input_submit inline offset-r10 btn btn-default"
                                                                 type="button" value="Print" style="width: auto;"
                                                                 onclick="window.print();">&nbsp;
                                                     </span>
@@ -623,8 +645,8 @@ Keep Session Active                                                  </strong>
     </div>
     <div class='clear'>
     </div>
-    <!-- End content_container -->
-  </div>
+
+
 
       <div id="footer">
         <div id="footer_top_border">
@@ -634,13 +656,7 @@ Keep Session Active                                                  </strong>
           <div class="article article_standard">
             <p>
               <span>
-                <a href="/doc/termsConditions" target="_blank">Terms and Conditions</a>
-                &nbsp;&nbsp;|&nbsp;
-                <a href="/doc/securityPolicy" target="_blank">Security Policy</a>
-                &nbsp;&nbsp;|&nbsp;
-                <a href="/doc/privacyPolicy" target="_blank">Privacy Policy</a>
-                &nbsp;&nbsp;|&nbsp;
-                <a href="/doc/contactUs" target="_blank">Contact Us</a>
+                                <a href="/doc/contactUs" target="_blank">Contact Us</a>
               </span>
             </p>
             <p>
@@ -660,6 +676,7 @@ Call Us:&nbsp; 1-302-830-9262              </span>
         </div>
         <!-- End footer -->
       </div>
+
             
   <div class='clear'>
   </div>
@@ -679,21 +696,6 @@ Call Us:&nbsp; 1-302-830-9262              </span>
 <script type="text/javascript" language="javascript"
         src="./theme/js/loan_servicing_js/jquery-ui.min-1.11.2.js"></script>
 <script type="text/javascript">
-	
-	/********* editing footer fix function********/
-	/*adding header_container as now header_container is seperated form content_container */
-	/* Footer Bottom Fix */
-function footerFix() {
-    $("#footer").css("margin-top", "0px");
-    $("#footer").css("margin-top", $(document).height() - $('#content_container').height() - $('#header_container').height() - $('#footer').height() + "px");
-}
-
-
-$(document).ready(function () {
-    footerFix();
-});
-
-/* End Footer Bottom Fix */
     var sessionCutDownTimes = 120;
 
     var timeOutId = null;
