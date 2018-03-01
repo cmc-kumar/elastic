@@ -1,4 +1,5 @@
 /* DOCUMENT READY FUNCTIONS */
+document.getElementById("mobile_nav_flyout_right_container").style.height = window.innerHeight + "px";
 
 $(document).ready(function () {
     if (window.location.hostname.indexOf("loanservicing") == -1) {

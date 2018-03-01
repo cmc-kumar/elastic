@@ -144,7 +144,8 @@ input[type="button"],
 	color:#FFF;
 	cursor: pointer;
 	font-family:"DIN Regular";
-	font-size: 1.26em;
+	/*font-size: 1.26em;*/
+	font-size: 17px;
     margin-top: .7em;
     padding: .5em 18px .5em 18px;
 	
@@ -204,15 +205,17 @@ input[value="Decline"]{
 	
 }
 
-input[type*="text"]{
-	
+input[type*="text"],textarea{
+
 	color:#6B6659;
 	border:1px solid #CCCBCB;
 	border-radius:4px;
 	line-height: 36px;
-	
+	padding: 0 10px;
+	font-family: "dinregular", Georgia, Serif;
 
-	
+
+
 }
 
 /* Page 1*/
@@ -532,6 +535,83 @@ float:right;
 
 	}
 
+
+/**************************************************************
+************** Start New Edits ********************************
+**************************************************************/
+
+
+/*start make a payment page */
+
+.position_relative_1 {
+
+	position: relative;
+	bottom: 5px;
+}
+
+.position_relative_2{
+
+	position: relative;
+	bottom: 13px;
+
+
+}
+/*end make a payment page */
+
+/* start account summary page */
+
+
+.margin_right_5{
+
+	margin-right:5%;
+}
+
+
+/* end account summary page */
+
+
+
+
+/* start survey and treatment*/
+
+.font_size_h2{
+
+
+	font-size: 2.3em;
+}
+
+/*end survey and treatment */
+
+
+
+
+
+/* start mobile menu */
+#mobile_nav_flyout_right #mobile_nav_flyout_right_container {
+
+	/*height:100vh;*/
+
+}
+
+/* end mobile menu */
+
+
+
+/* start payment offer details */
+
+@media only screen and (max-width: 850px){
+	.special_p_margin_top{
+		margin-top: 1.7em !important;
+	}
+
+
+
+
+}
+
+
+
+/* end payment offer details */
 
 
 
