@@ -587,6 +587,7 @@ function mobile_menu(x) {
     if (document.documentElement.clientWidth + $.scrollbarWidth() > 640) {
         animSpeed = .75;
         activeToggleSpeed = 800;
+        
     }
     if (document.documentElement.clientWidth + $.scrollbarWidth() <= 640) {
         animSpeed = 1;
@@ -611,6 +612,14 @@ function mobile_menu(x) {
         active_menu = "";
     }
     if (element.className.indexOf(" active") == -1 && x == "mobile_nav_flyout_right") {
+        
+        
+       //--//***solving the footer problem at survay and treatments page when click on menu we want the footer to disappear
+        // when the menu is closed and i click on it to open it>> footer disapear
+        document.getElementById("footer").style.display = 'none';
+        
+        
+        
         element.className = element.className.replace(" inactive", " active");
         active_menu = x;
         TweenLite.to(document.getElementById("mobile_nav_flyout_right"), animSpeed, { x: "0%" }, { force3D: true, ease: Quad.easeInOut });
@@ -619,9 +628,17 @@ function mobile_menu(x) {
         element.handled = true;
     }
     if (element.className.indexOf(" active") != -1 && x == "mobile_nav_flyout_right" && element.handled == false) {
+        
+        
+       
+        
+        
         TweenLite.to(document.getElementById("mobile_nav_flyout_right"), animSpeed, { x: "100%" }, { force3D: true, ease: Quad.easeInOut });
         TweenLite.to(document.getElementById("page_center"), animSpeed, { x: "0%" }, { force3D: true, ease: Quad.easeInOut });
 
+        
+        
+        
         // Upromise addition
         if (mobile_sub_nav_flyout_.length) {
             for (i = 0; i < mobile_sub_nav_flyout_.length; i++) {
@@ -634,6 +651,16 @@ function mobile_menu(x) {
             element.handled = true;
         }, activeToggleSpeed);
         active_menu = "";
+        
+        setTimeout(function () { 
+                    
+         // when the menu is opend and i click on it to close it>> footer appears
+       document.getElementById("footer").style.display = 'block';
+        
+        }, activeToggleSpeed);
+        
+
+        
     }
     accordionHeight();
     window.focus(document.getElementById(active_menu));

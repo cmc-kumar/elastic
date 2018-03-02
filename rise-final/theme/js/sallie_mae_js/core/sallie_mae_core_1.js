@@ -1,5 +1,18 @@
-/* DOCUMENT READY FUNCTIONS */
+// solving mobile menu height problem: make it =100% of windows height
 document.getElementById("mobile_nav_flyout_right_container").style.height = window.innerHeight + "px";
+
+//solving the footer problem at survay and treatments page when click on menu we want the footer to disappear
+//document.getElementById("footer").style.height = 0 + "px";
+
+$(document).ready(function () {
+    
+    
+    
+    
+    }
+);
+
+/* DOCUMENT READY FUNCTIONS */
 
 $(document).ready(function () {
     if (window.location.hostname.indexOf("loanservicing") == -1) {

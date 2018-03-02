@@ -144,8 +144,7 @@ input[type="button"],
 	color:#FFF;
 	cursor: pointer;
 	font-family:"DIN Regular";
-	/*font-size: 1.26em;*/
-	font-size: 17px;
+	font-size: 1.26em;
     margin-top: .7em;
     padding: .5em 18px .5em 18px;
 	
@@ -206,16 +205,18 @@ input[value="Decline"]{
 }
 
 input[type*="text"],textarea{
-
-	color:#6B6659;
+	
+	
 	border:1px solid #CCCBCB;
+    color:#6B6659;
 	border-radius:4px;
 	line-height: 36px;
-	padding: 0 10px;
-	font-family: "dinregular", Georgia, Serif;
+    padding: 0 10px;
+    font-family: "dinregular", Georgia, Serif;
+    min-height: 35px;
+	
 
-
-
+	
 }
 
 /* Page 1*/
@@ -381,6 +382,19 @@ float:right;
 	.no_padding_left_30{
 		padding-left:0 !important;
 	}
+    
+    
+    .no_more_tables td.no_padding_left_30:before{
+        
+        left: -100px;
+    }
+    
+    
+    
+    
+    
+    
+    
 	
 	input[type=submit], input[type="button"], .back{
 		
@@ -536,6 +550,8 @@ float:right;
 	}
 
 
+
+
 /**************************************************************
 ************** Start New Edits ********************************
 **************************************************************/
@@ -544,17 +560,17 @@ float:right;
 /*start make a payment page */
 
 .position_relative_1 {
-
-	position: relative;
-	bottom: 5px;
+    
+    position: relative;
+    bottom: 5px;
 }
 
 .position_relative_2{
-
-	position: relative;
-	bottom: 13px;
-
-
+    
+    position: relative;
+    bottom: 13px;
+    
+    
 }
 /*end make a payment page */
 
@@ -562,8 +578,8 @@ float:right;
 
 
 .margin_right_5{
-
-	margin-right:5%;
+    
+    margin-right:5%;
 }
 
 
@@ -575,9 +591,9 @@ float:right;
 /* start survey and treatment*/
 
 .font_size_h2{
-
-
-	font-size: 2.3em;
+    
+    
+font-size: 2.3em;
 }
 
 /*end survey and treatment */
@@ -589,7 +605,8 @@ float:right;
 /* start mobile menu */
 #mobile_nav_flyout_right #mobile_nav_flyout_right_container {
 
-	/*height:100vh;*/
+/*    height:100vh; */
+    /* i fixed the issue using javascript at sallie_mae_core_1.js file */
 
 }
 
@@ -600,13 +617,13 @@ float:right;
 /* start payment offer details */
 
 @media only screen and (max-width: 850px){
-	.special_p_margin_top{
-		margin-top: 1.7em !important;
-	}
+    .special_p_margin_top{
+        margin-top: 1.7em !important; 
+}
 
 
-
-
+    
+    
 }
 
 
@@ -614,8 +631,51 @@ float:right;
 /* end payment offer details */
 
 
+/* start survay and treatment */ 
+
+
+
+select{
+    
+    font-family: "dinregular", Georgia, Serif;
+    
+}
+
+
+
+.no_top_margin_important{
+    
+    margin-top:0 !important;
+}
+
+
+.height_0{
+    height:0;
+}
+
+
+
+
+/* end survay and treatment */
+
+
+/* header height adjust */
+
+
+@media screen and (max-width: 850px){
+    #header {
+
+        height: 45px;
+    }
+
+}
 
 
 
 
 
+
+
+
+
+/* end payment offer details */

@@ -12,3 +12,5 @@ snapOnSection[2] = "/customerService/";
 if (ie < 9) {
     modalToggle("unsupportedBrowserModal");
 }
+
+
