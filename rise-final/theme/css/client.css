@@ -601,17 +601,130 @@ font-size: 2.3em;
 
 
 
-
+/*************************************************************************/
 /* start mobile menu */
-#mobile_nav_flyout_right #mobile_nav_flyout_right_container {
+/*************************************************************************/
+/*************************************************************************/
 
-/*    height:100vh; */
-    /* i fixed the issue using javascript at sallie_mae_core_1.js file */
+
+#mobile_nav_flyout_right #mobile_nav_flyout_right_container {
+    height: 636px;
+}
+
+
+
+    
+    /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+    /* Portrait 3ady msh ma3woog */
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+      #mobile_nav_flyout_right #mobile_nav_flyout_right_container {
+      
+      height:647px;
+      }
 
 }
 
-/* end mobile menu */
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+      
+      #mobile_nav_flyout_right #mobile_nav_flyout_right_container {
+      
+      height:360px;
+      }
 
+}
+
+
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait 3ady */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+      
+      #mobile_nav_flyout_right #mobile_nav_flyout_right_container {
+      
+      height:716px;
+      }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+      
+       #mobile_nav_flyout_right #mobile_nav_flyout_right_container {
+           
+           height:394px;
+      }
+
+}
+
+
+
+/* ----------- iPhone X ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+      #mobile_nav_flyout_right #mobile_nav_flyout_right_container {
+          
+         height:785px;
+      }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+      #mobile_nav_flyout_right #mobile_nav_flyout_right_container {
+          
+          height:432px;
+          
+          
+      }   
+}
+
+
+/* chrome */
+#mobile_nav_flyout_right #mobile_nav_flyout_right_container {
+
+/*
+    chrome and desktop
+    height:100vh; 
+    max-height:736px;
+*/
+    
+    height: 100vh;
+    }
+    
+
+    
+    
+    
+/*************************************************************************/
+/* end mobile menu */
+/*************************************************************************/
+/*************************************************************************/
 
 
 /* start payment offer details */
@@ -662,12 +775,33 @@ select{
 /* header height adjust */
 
 
-@media screen and (max-width: 850px){
-    #header {
-
-        height: 45px;
+@media only screen and (max-width: 850px){
+   
+    #mobile_nav ul li {
+        
+        border-bottom: none;
     }
-
+    
+    #mobile_nav ul{
+        
+        height: 55px;
+    }
+    
+    #mobile_nav{
+        
+        height: 55px;
+    }
+    #header_container{
+        height: 55px;
+        
+        
+    }
+    
+    #header{
+         height: 55px;
+        
+    }
+    
 }
 
 
@@ -676,6 +810,3 @@ select{
 
 
 
-
-
-/* end payment offer details */

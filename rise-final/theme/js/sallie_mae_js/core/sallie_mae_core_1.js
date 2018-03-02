@@ -1,5 +1,5 @@
 // solving mobile menu height problem: make it =100% of windows height
-document.getElementById("mobile_nav_flyout_right_container").style.height = window.innerHeight + "px";
+//document.getElementById("mobile_nav_flyout_right_container").style.height = window.innerHeight + "px";
 
 //solving the footer problem at survay and treatments page when click on menu we want the footer to disappear
 //document.getElementById("footer").style.height = 0 + "px";
